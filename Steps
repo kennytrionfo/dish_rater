@@ -132,6 +132,7 @@ Create a form partial for creating a new restaurant:
 	bundle
 	Read documentation on simple_form
 	rails g simple_form:install --bootstrap  
+	Restart server 
 	In the form partial: 
 	<%= simple_form_for @restaurant, html: {multipart: true} do |f| %>
 	  <% if @restaurant.errors.any?  %>
@@ -155,9 +156,6 @@ Create a form partial for creating a new restaurant:
 	  </div>
 	  <div class="form-group">
     	<%= f.input :address, input_html: { class: 'form-control'} %>
-	  </div>
-	  <div class="form-group">
-	    <%= f.input :yumyuck, input_html: { class: 'form-control'} %>
 	  </div>
 	  <%= f.button :submit, class: "btn btn-primary" %>
 	<% end %>
