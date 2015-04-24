@@ -25,7 +25,8 @@ Check Versions etc:
 Set up github repo:
 	set up on github 
 	and commit and push on local
-
+	checkout on develop branch with: 
+	
 Install Gems
 	In Gemfile:
 	gem 'haml', '~> 4.0.6' to gemfile #Don't need this if not going to use haml dsl in the app.
