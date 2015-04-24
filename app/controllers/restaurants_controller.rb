@@ -1,5 +1,6 @@
 class RestaurantsController < ApplicationController
 	before_action :find_restaurant, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_user!, except: [ ] 
 
 	def index
 		@restaurants = Restaurant.all.order("created_at DESC")
