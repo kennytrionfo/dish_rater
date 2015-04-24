@@ -177,7 +177,7 @@ Add a flash message for when a new restaurant is created:
       <%= content_tag :div, msg, class: "alert alert-info"  %> <!-- this is bootstrap -->
     <% end %>
 
-    Refresh and get unknow action error. url should have /restaurant/1 but we haven't defined a show action inside of our params. 
+    Fill out form and Refresh and get unknow action error. url should have /restaurant/1 but we haven't defined a show action inside of our params. 
 	So in RestaurantsController:  
 	def show
 	end
@@ -201,11 +201,8 @@ Create a SHOW view:
 		<p>
 		<%= @restaurant.address %>
 		</p>
-		<p>
-		<%= @restaurant.yumyuck %>
-		</p>
 	</h1>
-	Refresh, should see flash message "successfully created new restaurantt" as well as name, description, address & yumyuck. 
+	Refresh, should see flash message "successfully created new restaurantt" as well as name, description, address. 
 
 	Also add a link back to the home page (root path): 
 	<%= link_to "Back", root_path %>
