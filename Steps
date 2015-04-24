@@ -41,7 +41,7 @@ Install Gems
 --------------------- create restaurant stuff ------------------------
 Create a Restaurant model with whatever attributes you want: 
 	In console: 
-	rails g model Restaurant title:string description:text 	
+	rails g model Restaurant name:string description:text address:string 
 
 Move the model over to the db: 
 	In console: 
