@@ -1,6 +1,7 @@
 class RestaurantsController < ApplicationController
 
 	def index
+		@restaurants = Restaurant.all.order("created_at DESC")
 	end
 
 	def new
@@ -11,8 +12,24 @@ class RestaurantsController < ApplicationController
 		@restaurant = Restaurant.new(restaurant_params)
 	end
 
+	def edit
+	
+	end
+	
+	def update
+		if @restaurant.update(restaurant_params)
+			redirect_to @restaurant, notice: "Restaurant was Successfully updated"
+		else
+			render 'edit'
+		end
+	end
+
+	def destroy
+
+	end
 
 
+	
 
 	private
 
