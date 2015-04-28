@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
 
   get 'welcome/index'
+  get 'welcome/index2'
 
   devise_for :users
   resources :restaurants
   root 'welcome#index'
-
 
 
   # The priority is based upon order of creation: first created -> highest priority.
