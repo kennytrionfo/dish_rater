@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
-  get 'welcome/index'
-  get 'welcome/index2'
+  # root :to => redirect('/temp_welcome_page/yummy_yucky.html')
+  # root :controller => 'static', :action => 'welcome'
+  # get 'welcome/index'
+  # get 'welcome/index2'
 
   devise_for :users
   resources :restaurants
