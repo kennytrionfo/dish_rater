@@ -397,6 +397,7 @@ Create an index view: # dont' know if we'll need this in the end cuz we are putt
 ==== Right Here Right Now =====
 ===============================
 -Log time. 
+-Looking at a few of the other apps to set up the right config for dishes to show up on restaurants page. creating a _dish.html.erb partial file now. 
 -Look at the todo_list todo_item app and/or video to make sure I put the dishes in here the right way. 
 -when ready to put the welcome page on, start by converting the html to erb for just the nav bar in the application file and see if I can get that to render correctly. 
 -Clean up the steps below & above to make them accurate. 

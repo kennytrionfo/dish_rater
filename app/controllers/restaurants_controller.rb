@@ -1,9 +1,14 @@
 class RestaurantsController < ApplicationController
 	before_action :find_restaurant, only: [:show, :edit, :update, :destroy]
 	before_action :authenticate_user!, except: [ ] 
+    before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
 
 	def index
 		@restaurants = Restaurant.all.order("created_at DESC")
+	end
+
+	def show
+
 	end
 
 	def new
@@ -19,8 +24,7 @@ class RestaurantsController < ApplicationController
 		end
 	end
 
-	def show
-	end
+
 
 	def edit
 	end
@@ -42,6 +46,9 @@ class RestaurantsController < ApplicationController
 	
 
 	private
+	def set_restaurant
+      @restaurant = Restaurant.find(params[:id])
+    end
 
 	def restaurant_params
 		params.require(:restaurant).permit(:name, :description, :address)
