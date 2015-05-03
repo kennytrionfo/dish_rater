@@ -192,7 +192,7 @@ Add a flash message for when a new restaurant is created:
 	Then at top add following before action: 
 	before_action :find_restaurant, only: [:show, :edit, :update, :destroy]
 
-Create a SHOW view: 
+Create a SHOW VEIW: 
 	In views/Restaurants/ create show.html.erb
 	Add following to file: 
 	<h1>
@@ -210,7 +210,7 @@ Create a SHOW view:
 	<%= link_to "Back", root_path %>
 	Refresh to see.
 
-Create an edit view: 
+Create an EDIT VIEW: 
 	Create new file in views/Restaurants called:
 	edit.html.erb 
 	Add code: 
@@ -219,8 +219,8 @@ Create an edit view:
 	<%= link_to "Cancel", restaurant_path %>
 
 	Commit
- 
-Add a link_to on the show page to link to the edit page: 
+
+Add a link to the edit page: 
 	<%= link_to "Edit", edit_restaurant_path %>
 	Refresh
 	Add code in the destroy action to delete a restaurant & redirect to main index page: 
@@ -229,12 +229,12 @@ Add a link_to on the show page to link to the edit page:
 
 	Commit	
 
-Now add delete button on show page: 
+Add DELETE button on show page: 
 	In views/show:
 	<%= link_to "Delete", restaurant_path, method: :delete, data: {confirm: "Are you sure?"} %>
 	Refresh
 
-Add a "new" button on the index page:
+Add a NEW button on the index page:
 	In views/index:
 	<%= link_to "New Restaurant", new_restaurant_path %>
 	Refresh
@@ -397,6 +397,7 @@ Create an index view: # dont' know if we'll need this in the end cuz we are putt
 ==== Right Here Right Now =====
 ===============================
 -Log time. 
+- LINK DISHES AND RESTAURANTS TOGETHER! IN MODELS, ROUTES AND DB KEYS
 -Looking at a few of the other apps to set up the right config for dishes to show up on restaurants page. creating a _dish.html.erb partial file now. 
 -Look at the todo_list todo_item app and/or video to make sure I put the dishes in here the right way. 
 -when ready to put the welcome page on, start by converting the html to erb for just the nav bar in the application file and see if I can get that to render correctly. 
@@ -428,7 +429,7 @@ Create the new and create CRUD actions in dishs_controller.rb
 		params.require(:dish).permit(:name, :description, :yumyuck)
 	end
 
-Now create the form to actually create a new dish: 
+New Dish form: 
 	Create two partials (new files) in views/dishes:
 	1 _form.html.erb 
 	<%= simple_form_for ([@restaurant, @restaurant.dishes.build]) do |f| %>
@@ -468,7 +469,7 @@ Show the new dishes form and the restaurant's dishes under the restaurant's show
 		<%= render @restaurant.dishes %>
 	</div>
 
-Create a view for creating a new dish: 
+New Dish view 
 	In app/views/dishs: 
 	new.html.erb
 	
@@ -484,7 +485,6 @@ Add another div in the dishes/new view that renders the new dish form:
 	
 	Test that it works:
 	Go to the restaurant show page, click new, should be routed to dishes/new view that's rendering the form. 
-
 
 List all of the dishes on the index page:  # Again, we may not need this. 
 	Go back to views/dishes/index.html.erb and add: 
@@ -618,7 +618,7 @@ Add the ablity to DELETE A DISH
 	<%= link_to "Delete", dish_path, method: :delete, data: {confirm: "Are you sure?"} %>
 	Refresh
 
-Add a "new" button on the index page:
+Add a NEW button on the index page:
 	In views/dishes/index:
 	<%= link_to "New Dish", new_dish_path %>
 	Refresh

@@ -4,6 +4,7 @@ class RestaurantsController < ApplicationController
     before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
 
 	def index
+		get_dishes
 		@restaurants = Restaurant.all.order("created_at DESC")
 	end
 
@@ -56,6 +57,10 @@ class RestaurantsController < ApplicationController
 
 	def find_restaurant
 		@restaurant = Restaurant.find(params[:id])
+	end
+
+	def get_dishes
+		# Figure out how to get the dishes
 	end
 
 end
