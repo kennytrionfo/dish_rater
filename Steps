@@ -500,7 +500,7 @@ New Dish view
 	<%= render 'form' %>
 	<%= link_to "Back", root_path %>
 
-Add another div in the dishes/new view that renders the new dish form: 
+Add another div in the dishes/new view that renders the new dish form: #chose one of these, but not both.
 	<div id="form">
 		<%= render "dishes/form" %>
 	</div>

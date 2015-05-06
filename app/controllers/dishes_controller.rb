@@ -7,6 +7,10 @@ class DishesController < ApplicationController
 		redirect_to @restaurant 
 	end
 
+	def new
+		
+	end
+	
 	def show
 		dish = @restaurant.dishes.list
 	end
