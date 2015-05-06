@@ -374,13 +374,21 @@ Add authentication so users who aren't signed in can't do anything:
 	Test in an in congnito window and should see that you can't do stuff. 
 
 -------- Dish stuff -----------
-Create a Dish model with the attributes that you want: 
+Create a Dish model with the attributes that you want, that references the restaurant model: 
 	In console: 
-	rails g model Dish name:string description:text yumyuck:string 	
+	rails g model Dish name:string description:text yumyuck:string restaurant:references
 
 Move the model over to the db: 
 	In console: 
 	rake db:migrate
+
+Do your associations for your models: 
+	Tell the restaurant model that it has many dishes: 
+	In the restaurant.rb file: 
+	has_many :dishes
+
+	Tell the Dish model that it belongs to restaurants with: 
+	belongs_to :restaurant
 
 Create a Dishes controller: 
 	In console: 
