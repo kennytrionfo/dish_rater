@@ -1,1 +1,0 @@
-/* No CallRail tracking numbers are currently active */

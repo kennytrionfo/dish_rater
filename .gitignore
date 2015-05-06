@@ -15,5 +15,5 @@
 /log/*.log
 /tmp
 
-temp_welcome_page copy
+temp_welcome_page
 ignore_test
