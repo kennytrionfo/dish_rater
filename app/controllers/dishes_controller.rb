@@ -2,15 +2,19 @@ class DishesController < ApplicationController
 	before_action :set_restaurant
 	before_action :set_dish, except: [:create]
 
+	def index
+		@dishes = @restaurant.dishes.all(dish_params)
+	end
+	
 	def create
 		@dish = @restaurant.dishes.create(dish_params)
 		redirect_to @restaurant 
 	end
 
 	def new
-		
+		@dish = @restaurant.dishes.create(dish_params)
 	end
-	
+
 	def show
 		dish = @restaurant.dishes.list
 	end
