@@ -45,9 +45,15 @@ Create a Restaurant model with whatever attributes you want:
 	In console: 
 	rails g model Restaurant name:string description:text address:string 
 
+Add local host to database.yml file? when? why? google this. 
+
 Move the model over to the db: 
 	In console: 
 	rake db:migrate
+
+Check out the model in the db:
+	For postgresql: 
+	\c dish_rater_development (or whatever the name of your db found in database.yml file)
 
 Create a Restaurants controller: 
 	In console: 
@@ -397,6 +403,7 @@ Create an index view: # dont' know if we'll need this in the end cuz we are putt
 ==== Right Here Right Now =====
 ===============================
 -Log time. 
+- put the html landing page on the no git list
 - LINK DISHES AND RESTAURANTS TOGETHER! IN MODELS, ROUTES AND DB KEYS
 -Looking at a few of the other apps to set up the right config for dishes to show up on restaurants page. creating a _dish.html.erb partial file now. 
 -Look at the todo_list todo_item app and/or video to make sure I put the dishes in here the right way. 
