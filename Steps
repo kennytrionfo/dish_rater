@@ -390,6 +390,14 @@ Do your associations for your models:
 	Tell the Dish model that it belongs to restaurants with: 
 	belongs_to :restaurant
 
+Create some nested routes for our dishes: 
+	In routes.rb file, make restaurants resources a block with dishes resources inside:  
+	resources :restaurants do
+		resources :dishes
+	end
+
+	check routes with rake routes
+
 Create a Dishes controller: 
 	In console: 
 	rails g controller Dishes 
@@ -411,8 +419,6 @@ Create an index view: # dont' know if we'll need this in the end cuz we are putt
 ==== Right Here Right Now =====
 ===============================
 -Log time. 
-- put the html landing page on the no git list
-- LINK DISHES AND RESTAURANTS TOGETHER! IN MODELS, ROUTES AND DB KEYS
 -Looking at a few of the other apps to set up the right config for dishes to show up on restaurants page. creating a _dish.html.erb partial file now. 
 -Look at the todo_list todo_item app and/or video to make sure I put the dishes in here the right way. 
 -when ready to put the welcome page on, start by converting the html to erb for just the nav bar in the application file and see if I can get that to render correctly. 
@@ -427,7 +433,8 @@ Create an index view: # dont' know if we'll need this in the end cuz we are putt
 -Make the signed in, new dish, signed out notices fade after showing and not change the page also upon refresh. 
 -Redo this freaking app 3 times. 
 ===============================
-Create the new and create CRUD actions in dishs_controller.rb 
+
+Create the new and create CRUD actions in dishs_controller.rb  # This may need to go. may not be needed.
 	Start wtih this: 
 	def new
 		@dish = Dish.new

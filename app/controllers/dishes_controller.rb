@@ -6,9 +6,11 @@ class DishesController < ApplicationController
 		@dish = @restaurant.dishes.create(dish_params)
 		redirect_to @restaurant 
 	end
+
 	def show
 		dish = @restaurant.dishes.list
 	end
+
 	def destroy
 		if @dish.destroy
 			flash[:success] = "Restaurant was deleted"
@@ -35,7 +37,7 @@ class DishesController < ApplicationController
 	end
 
 	def dish_params
-		params[:dish].permit(:name, :description, :address)
+		params[:dish].permit(:name, :description, :yumyuck)
 	end
 
 end

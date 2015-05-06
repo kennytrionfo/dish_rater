@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   # get 'welcome/index2'
 
   devise_for :users
-  resources :restaurants
+
+  resources :restaurants do
+    resources :dishes
+  end
+
   root 'welcome#index'
 
 
