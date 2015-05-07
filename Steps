@@ -415,25 +415,6 @@ Create an index view: # dont' know if we'll need this in the end cuz we are putt
 	and put in a simple: 
 	<h1>This is the dishes index placeholder</h1>
 
-===============================
-==== Right Here Right Now =====
-===============================
--Log time. 
--Looking at a few of the other apps to set up the right config for dishes to show up on restaurants page. creating a _dish.html.erb partial file now. 
--Look at the todo_list todo_item app and/or video to make sure I put the dishes in here the right way. 
--when ready to put the welcome page on, start by converting the html to erb for just the nav bar in the application file and see if I can get that to render correctly. 
--Clean up the steps below & above to make them accurate. 
--Trying to create a new dish that is linked to a restaurant and show it on a restaurant's page. 
--Make it so that after you signup or log back in, you are redirected to the dishs index page, not the landing page.  
--Add a restaurant model with a controller, crud actions, views and routes and then connect restaurants to a user dishs to a restaurant. 
--Change the devise notices for sucessful login, logout etc to be custom. 
--Add a yummy yucky attribute to dishs. 
--James - help me find and change the "missing" word on the cards on the dishs index page when there is no picture. 
--James - help me find where I change the css so that the image has some padding right it too so it looks like it's in the card. 
--Make the signed in, new dish, signed out notices fade after showing and not change the page also upon refresh. 
--Redo this freaking app 3 times. 
-===============================
-
 Create the new and create CRUD actions in dishs_controller.rb  # This may need to go. may not be needed.
 	Start wtih this: 
 	def new
@@ -653,6 +634,26 @@ Add a wrapper around the new & edit forms.
 	
 	Do same thing to edit page.
 	refresh, commit
+
+===============================
+==== Right Here Right Now =====
+===============================
+-Log time. 
+- Read paperclip documentation and retry installing. 
+-Looking at a few of the other apps to set up the right config for dishes to show up on restaurants page. creating a _dish.html.erb partial file now. 
+-Look at the todo_list todo_item app and/or video to make sure I put the dishes in here the right way. 
+-when ready to put the welcome page on, start by converting the html to erb for just the nav bar in the application file and see if I can get that to render correctly. 
+-Clean up the steps below & above to make them accurate. 
+-Trying to create a new dish that is linked to a restaurant and show it on a restaurant's page. 
+-Make it so that after you signup or log back in, you are redirected to the dishs index page, not the landing page.  
+-Add a restaurant model with a controller, crud actions, views and routes and then connect restaurants to a user dishs to a restaurant. 
+-Change the devise notices for sucessful login, logout etc to be custom. 
+-Add a yummy yucky attribute to dishs. 
+-James - help me find and change the "missing" word on the cards on the dishs index page when there is no picture. 
+-James - help me find where I change the css so that the image has some padding right it too so it looks like it's in the card. 
+-Make the signed in, new dish, signed out notices fade after showing and not change the page also upon refresh. 
+-Redo this freaking app 3 times. 
+===============================
 
 Add Paperclip gem for uploading images:
 	Add paperclip gem:

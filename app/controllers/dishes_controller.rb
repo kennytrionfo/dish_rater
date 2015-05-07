@@ -61,7 +61,7 @@ class DishesController < ApplicationController
 	end
 
 	def dish_params
-		params[:dish].permit(:name, :description, :yumyuck)
+		params[:dish].permit(:name, :description, :yumyuck, :image)
 	end
 
 end
