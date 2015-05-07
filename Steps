@@ -661,7 +661,7 @@ Add Paperclip gem for uploading images:
 	Read paperclip documentation
 	Install imagemagic
 	
-	From the quickstart section in documentation, add the has_attached_file and validates_attachment_content_type to the dish: 
+	From the quickstart section in documentation, add the has_attached_file and validates_attachment_content_type to the dish model: 
 	Add following to dish.rb (this is copied from paperclip gem but changed for our needs):
 	has_attached_file :image, styles: { :medium => "300x300>" }
 	validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
@@ -701,7 +701,7 @@ Add Paperclip gem for uploading images:
 		  </h2>
 		<% end %>
 
-Add jquery MASONRY gem to have dishs auto stack: 
+Add jquery MASONRY gem to have dishes auto stack: 
 	in gemfile, put 
 	gem 'masonry-rails', '~> 0.2.1'
 	and bundle
