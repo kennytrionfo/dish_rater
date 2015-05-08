@@ -685,15 +685,15 @@ Add Paperclip gem for uploading images:
 	:image
 	to the dish_params behind :description
 	
-	Add image tag to top of show page and edit page:
-		In dishes/show.html.erb: 
-		<%= image_tag @dish.image.url(:medium) %>
+	Add image tag to top of dish card on the restaurant show page and dish edit page:
+		In restaurant/show.html.erb: 
+		<%= image_tag dish.image.url(:medium) %>
 
 		Then show the user which image they are editing when they are editing it. 
 		In edit.html.erb, above = render 'form' add: 
-	   	<%= image_tag @dish.image.url(:medium) %>	
+	   	<%= image_tag dish.image.url(:medium) %>	
 
-	Add the image tag to the dishs on the index page:
+	Add the image tag to the dishs on the index page: # We don't have a dishes index page. 
 	views/index.html.erb, change code to this: 
 		<% @dishs.each do |dish| %>
 		  <%= link_to (image_tag dish.image.url(:medium)), dish %>
