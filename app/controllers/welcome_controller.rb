@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   
-  def yummy_yucky
+  def index
   end
   
 end

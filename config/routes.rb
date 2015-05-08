@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   end
 
   # root 'welcome#index'
-  root 'welcome#yummy_yucky'
+  root 'welcome#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
