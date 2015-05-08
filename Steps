@@ -597,7 +597,7 @@ Create a SHOW view for dishes: #They won't have their own page. they's liveon re
 	Refresh to see.
 
 Create an EDIT view for dishes: #need to get new form page working before doing this. 
-	Create new file in views/dishs called:
+	Create new file in views/dishes called:
 	edit.html.erb 
 	Add code: 
 	<h1>Edit Dish</h1>

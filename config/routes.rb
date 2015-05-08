@@ -11,7 +11,8 @@ Rails.application.routes.draw do
     resources :dishes
   end
 
-  root 'welcome#index'
+  # root 'welcome#index'
+  root 'welcome#yummy_yucky'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
