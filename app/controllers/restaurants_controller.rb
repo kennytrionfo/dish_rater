@@ -9,7 +9,6 @@ class RestaurantsController < ApplicationController
 	end
 
 	def show
-		
 	end
 
 	def new
@@ -24,8 +23,6 @@ class RestaurantsController < ApplicationController
 			render 'new'
 		end
 	end
-
-
 
 	def edit
 	end

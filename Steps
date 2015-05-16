@@ -489,9 +489,20 @@ New Dish view
 	new.html.erb
 	
 	Add code in new view for a form to create a new dish: 
-	<h1>New Form</h1>
-	<%= render 'form' %>
-	<%= link_to "Back", root_path %>
+	<div class="col-md-6 col-md-offset-3">
+	  <div class="row">
+	    <div class="panel panel-default">
+	      <div class="panel-heading">
+	        <h1>Create A New Dish</h1>
+	      </div>
+	      <div class="panel-body">
+	        <%= render 'form' %>
+	        <p></p>
+	        <%= link_to "Back", :back %>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 Add another div in the dishes/new view that renders the new dish form: #chose one of these, but not both.
 	<div id="form">
@@ -531,10 +542,10 @@ Add edit, update and destroy actions/methods to dish controller:
 
 	end
 
-Create a form partial for creating a new dish: #This could be used for a form on it's own page. 
+Create a form partial for creating a new dish: 
 	In views/dishs create the form partial _form.html.erb
 	In the form partial: 
-	<%= simple_form_for @dish, html: {multipart: true} do |f| %>
+	<%= simple_form_for ([@restaurant, @restaurant.dishes.build])  do |f| %>
 	  <% if @dish.errors.any?  %>
 	    <div id="errors"></div>
 	    <h2></h2>
@@ -651,16 +662,9 @@ Add a wrapper around the new & edit forms.
 ==== Right Here Right Now =====
 ===============================
 -Log time. 
-- Read paperclip documentation and retry installing. 
--Looking at a few of the other apps to set up the right config for dishes to show up on restaurants page. creating a _dish.html.erb partial file now. 
--Look at the todo_list todo_item app and/or video to make sure I put the dishes in here the right way. 
 -when ready to put the welcome page on, start by converting the html to erb for just the nav bar in the application file and see if I can get that to render correctly. 
--Clean up the steps below & above to make them accurate. 
--Trying to create a new dish that is linked to a restaurant and show it on a restaurant's page. 
 -Make it so that after you signup or log back in, you are redirected to the dishs index page, not the landing page.  
--Add a restaurant model with a controller, crud actions, views and routes and then connect restaurants to a user dishs to a restaurant. 
 -Change the devise notices for sucessful login, logout etc to be custom. 
--Add a yummy yucky attribute to dishs. 
 -James - help me find and change the "missing" word on the cards on the dishs index page when there is no picture. 
 -James - help me find where I change the css so that the image has some padding right it too so it looks like it's in the card. 
 -Make the signed in, new dish, signed out notices fade after showing and not change the page also upon refresh. 
