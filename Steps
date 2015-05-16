@@ -427,9 +427,21 @@ Create the new and create CRUD actions in dishs_controller.rb  # This may need t
 
 
 	private
+	def find_dish
+		@dish = Dish.find(params[:id])
+	end
 
+	def set_restaurant 
+		@restaurant = Restaurant.find(params[:restaurant_id])
+	end
+
+	def set_dish
+		@dish = @restaurant.dishes.find(params[:id]) rescue Dish.new(name:"", description:"", yumyuck:"")		
+	end
+	
 	def dish_params
-		params.require(:dish).permit(:name, :description, :yumyuck)
+		return nil if params[:dish].to_s == ''
+		params[:dish].permit(:name, :description, :yumyuck, :image)
 	end
 
 New Dish form: 

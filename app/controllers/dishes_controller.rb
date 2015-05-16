@@ -57,10 +57,11 @@ class DishesController < ApplicationController
 	end
 
 	def set_dish
-		@dish = @restaurant.dishes.find(params[:id])		
+		@dish = @restaurant.dishes.find(params[:id]) rescue Dish.new(name:"", description:"", yumyuck:"")		
 	end
 
 	def dish_params
+		return nil if params[:dish].to_s == ''
 		params[:dish].permit(:name, :description, :yumyuck, :image)
 	end
 

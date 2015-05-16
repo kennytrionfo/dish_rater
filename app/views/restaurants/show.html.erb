@@ -13,13 +13,7 @@
 
 <br></br>
 
-<%= link_to "Enter New Dish", restaurant_path %>
-
-<br></br>
-
-<div id="form">
-	<%= render "dishes/form" %>
-</div>
+<%= link_to "Enter New Dish", new_restaurant_dish_path(@restaurant.id)%>
 
 <br></br>
 
