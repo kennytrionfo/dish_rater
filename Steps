@@ -917,7 +917,7 @@ CSS styling:
 		min-height: 250px;
 	}
 
-Style up the show page with various. should look like this:
+Style SHOW page:
 	<div class="row" id="dish_show">
 	  <div class="col-md-8" "col-md-offset-2">
 	    <div class="panel panel-default">
@@ -926,7 +926,7 @@ Style up the show page with various. should look like this:
 	      </div>
 	      <div class="panel-body">
 	        <h1>
-	          <%= @dish.title %>
+	          <%= @dish.name %>
 	        </h1>
 	        <p class="description">
 	          <%= @dish.description %>

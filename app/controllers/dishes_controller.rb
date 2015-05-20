@@ -21,7 +21,7 @@ class DishesController < ApplicationController
 	end
 
 	def edit
-	
+		
 	end
 	
 	def update

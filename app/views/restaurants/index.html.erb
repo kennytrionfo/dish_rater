@@ -1,12 +1,21 @@
-<% @restaurants.each do |restaurant| %>
-	<p>
-		<%= link_to restaurant.name, restaurant %>
-	</p>
-	<p>
-		<%= restaurant.description %>
-	</p>
-	<p>
-		<%= restaurant.address %>
-	</p>
-<% end %>
+<div class="restaurant_title_bar">
+  <h3 id="my_restaurant">My Restaurants</h3>
+</div>
+
+<div class="container">
+	<% @restaurants.each do |restaurant| %>
+	  <div class="index_row clearfix">
+	    <h2 class="restaurant_title"><%= link_to restaurant.name, restaurant %></h2>
+	    <p class="restaurant_description"><%= restaurant.description %></p>
+	    <p class="restaurant_address"><%= restaurant.address %></p>
+	    <p class="menu_spacing"></p>
+	  <div class="restaurant_menu">
+	    <%= link_to "Dishes", restaurant %>  &nbsp;   | &nbsp;  
+	    <%= link_to "Edit", restaurant %>  
+	  </div >
+	  </div>
+	<% end %>
+</div>
+
+
 

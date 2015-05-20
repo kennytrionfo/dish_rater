@@ -16,3 +16,433 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap"; 
+
+$white_opaque: rgba(250, 250, 250, .3);
+$dark: #1F7972;
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+ 	height: 100%;
+ /*Original green*/
+/*	  background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	  background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	  background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	  background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	  background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+	  font-family: 'Lato', sans-serif;*/
+
+ /*Medium orange. little variance*/
+/*	  background: -webkit-linear-gradient(40deg, #DFAE09 10%, #C97201 100%);
+	  background:    -moz-linear-gradient(40deg, #DFAE09 10%, #C97201 100%);
+	  background:     -ms-linear-gradient(40deg, #DFAE09 10%, #C97201 100%);
+	  background:      -o-linear-gradient(40deg, #DFAE09 10%, #C97201 100%);
+	  background:         linear-gradient(40deg, #DFAE09 10%, #C97201 100%);
+	  font-family: 'Lato', sans-serif;*/
+		
+ /*Orange to burnt orange		*/
+/*	  background: -webkit-linear-gradient(40deg, #F2A615 10%, #A64314 100%);
+	  background:    -moz-linear-gradient(40deg, #F2A615 10%, #A64314 100%);
+	  background:     -ms-linear-gradient(40deg, #F2A615 10%, #A64314 100%);
+	  background:      -o-linear-gradient(40deg, #F2A615 10%, #A64314 100%);
+	  background:         linear-gradient(40deg, #F2A615 10%, #A64314 100%);
+	  font-family: 'Lato', sans-serif;*/
+
+/*yummyyucky blue*/
+/*	  background: -webkit-linear-gradient(40deg, #33A9E0 10%, #99D4F0 100%);
+	  background:    -moz-linear-gradient(40deg, #33A9E0 10%, #99D4F0 100%);
+	  background:     -ms-linear-gradient(40deg, #33A9E0 10%, #99D4F0 100%);
+	  background:      -o-linear-gradient(40deg, #33A9E0 10%, #99D4F0 100%);
+	  background:         linear-gradient(40deg, #33A9E0 10%, #99D4F0 100%);*/
+	  font-family: 'Lato', sans-serif;
+
+	}
+
+
+body {
+	background: #99D4F0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+nav {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	.navbar-brand {
+		a {
+			color: #BD1E23;
+			font-weight: bold;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+ /*right-fit paste */
+
+	.clearfix:before,
+	.clearfix:after {
+	    content: " ";
+	    display: table;
+	}
+
+	.clearfix:after {
+	    clear: both;
+	}
+
+	#notice {
+		text-align: center;
+		font-size: 0.6em;
+		color: $dark;
+		font-weight: 100;
+	}
+
+	.container {
+		width: 50%;
+		max-width: 750px;
+		background: $white_opaque;
+		margin: 1.5em auto 0 auto;
+		border-radius: 7px;
+		-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
+		box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+		/*padding: 1em 0;*/
+	}
+
+	.panel-body {
+		padding: 35px;
+		h1 {
+			margin: 0 0 10px 0;
+		}
+		.description {
+			color: #868686;
+			line-height: 1.75;
+			margin: 0;
+		}
+	}
+
+	.restaurant_title_bar {
+		text-align: center;
+		font-weight: 700;
+		/*font-size: 2.5rem;*/
+		width: 50%;
+		color: white;
+		max-width: 750px;
+		background: $white_opaque;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin: .5em auto 0 auto;
+		border-radius: 7px;
+		-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
+		box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+		/*padding: 1px 0;*/
+	}
+	#my_restaurant {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+
+	.restaurant_title {
+		text-align: center;
+		font-weight: 500;
+		font-size: 2.0rem;
+		text-transform: uppercase;
+		color: white;
+		margin: 0;
+		a {
+			text-decoration: none;
+			color: white;
+			transition: all .4s ease-in-out;
+			&:hover {
+				opacity: 0.4;
+			}
+		}
+	}
+
+	.restaurant_menu {
+		text-align: center;
+		font-weight: 300;
+		font-size: 1.1rem;
+		text-transform: uppercase;
+		color: white;
+		margin: 0;
+		a {
+			text-decoration: none;
+			color: white;
+			transition: all .4s ease-in-out;
+			&:hover {
+				opacity: 0.4;
+			}
+		}
+	}
+
+	.menu_spacing {
+		font-size: .5rem;
+	}
+
+	.restaurant_description {
+		/*margin: 0 0 3em 0;*/
+		text-align: center;
+		font-size: 1em;
+		color: #437BBB;
+		font-style: italic;
+		font-weight: 100;
+	}
+	.restaurant_address {
+		text-align: center;
+		font-size: 1em;
+		color: #1f7972;
+		font-weight: 100;
+	}
+
+	.index_row {
+		padding: 1em;
+		border-bottom: 1px solid rgba(250,250,250, .3);
+		.restaurant_sub_title {
+			margin-bottom: 0;
+		}
+	}
+
+	#dishes {
+	  margin: 0 auto;
+	  width: 100%;
+	  .box {
+		  margin: 10px;
+		  width: 350px;
+		  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+		  border-radius: 7px;
+		  text-align: center;
+		  img {
+		  	max-width: 100%;
+		  	height: auto;
+		  }
+		  h2 {
+		  	font-size: 22px;
+		  	margin: 0;
+		  	padding: 25px 10px;
+		  	a {
+					color: #474747;
+		  	}
+		  }
+		  .user {
+		  	font-size: 12px;
+		  	border-top: 1px solid #EAEAEA;
+				padding: 15px;
+				margin: 0;
+		  }
+		}
+	}
+
+	#dish_wrapper {
+		.row {
+			width: 100%;
+			border-top: 1px solid rgba(250,250,250, .3);
+			border-bottom: 1px solid rgba(250,250,250, .3);
+			.complete {
+				width: 10%;
+				float: left;
+				text-align: center;
+				border-right: 1px solid rgba(250,250,250, .3);
+				padding: 1em 0;
+			}
+			.dish {
+				width: 80%;
+				float: left;
+				p {
+					margin: 0;
+					padding: 1em;
+					color: $dark;
+					font-weight: 100;
+				}
+			}
+			.trash {
+				width: 10%;
+				float: left;
+				text-align: center;
+				border-left: 1px solid rgba(250,250,250, .3);
+				padding: 1em 0;
+			}
+			i {
+				color: white;
+				transition: all .4s ease-in-out;
+				&:hover {
+					color: $dark;
+				}
+			}
+		}
+
+		#form {
+			margin-top: 2em;
+			padding: 0 5%;
+			input[type="text"] {
+				width: 72%;
+				margin-right: 2%;
+				display: inline-block;
+				outline: none;
+				background: rgba(250,250,250,.4);
+				border: none;
+				height: 40px;
+				border-radius: 4px;
+				padding: 1em 2em;
+			}
+
+			input[type="submit"] {
+				background: rgba(250,250,250,.4);
+				outline: none;
+				border: none;
+				height: 40px;
+				border-radius: 4px;
+				width: 25%;
+				display: inline-block;
+				transition: all .4s ease-in-out;
+				cursor: pointer;
+				&:hover {
+					background: $dark;
+				}
+			}
+			::-webkit-input-placeholder { color: $dark; }
+		}
+	}
+
+	.links {
+		display: block;
+		margin: 1.5em auto 0 auto;
+		text-align: center;
+		font-size: 0.8em;
+		color: white;
+		a {
+			color: white;
+		}
+	}
+
+	.forms {
+		padding: 0 5%;
+	}
+
+	label {
+		color: $dark;
+	}
+
+	input[type="text"], textarea {
+		width: 100%;
+		margin: .5em 2% 1em 0;
+		display: inline-block;
+		outline: none;
+		background: rgba(250,250,250,.4);
+		border: none;
+		height: 40px;
+		border-radius: 4px;
+		padding: 1em 2em;
+	}
+
+	textarea {
+		height: 200px;
+	}
+
+	input[type="submit"] {
+		background: white;
+		outline: none;
+		border: none;
+		height: 40px;
+		border-radius: 4px;
+		width: 25%;
+		display: inline-block;
+		transition: all .4s ease-in-out;
+		cursor: pointer;
+		color: $dark;
+		&:hover {
+			background: $dark;
+			color: white;
+		}
+	}
+	::-webkit-input-placeholder { color: $dark; }
+
+/*end of paste from right-fit*/
+
+
+
+#dishes {
+  margin: 0 auto;
+  width: 100%;
+  .box {
+	  margin: 10px;
+	  width: 350px;
+	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	  border-radius: 7px;
+	  text-align: center;
+	  img {
+	  	max-width: 100%;
+	  	height: auto;
+	  }
+	  h2 {
+	  	font-size: 22px;
+	  	margin: 0;
+	  	padding: 25px 10px;
+	  	a {
+				color: #474747;
+	  	}
+	  }
+	  .user {
+	  	font-size: 12px;
+	  	border-top: 1px solid #EAEAEA;
+			padding: 15px;
+			margin: 0;
+	  }
+	}
+}
+
+#edit_page {
+	.current_image {
+		img {
+			display: block;
+			margin: 20px 0;
+		}
+	}
+}
+
+#dish_show {
+	.panel-heading {
+		padding: 0;
+	}
+	.dish_image {
+		img {
+			max-width: 100%;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.panel-body {
+		padding: 35px;
+		h1 {
+			margin: 0 0 10px 0;
+		}
+		.description {
+			color: #868686;
+			line-height: 1.75;
+			margin: 0;
+		}
+	}
+	.panel-footer {
+		padding: 20px 35px;
+		p {
+			margin: 0;
+		}
+		.user {
+			padding-top: 8px;
+		}
+	}
+}
+
+textarea {
+	min-height: 250px;
+}
