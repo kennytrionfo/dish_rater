@@ -107,8 +107,11 @@ nav {
 
 	.container {
 		width: 50%;
+		background-color: #99D4F0;
 		max-width: 750px;
-		background: $white_opaque;
+		/*background: #99D4F0;*/
+		/*background: #3599C7;*/
+		background: white;
 		margin: 1.5em auto 0 auto;
 		border-radius: 7px;
 		-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
@@ -135,7 +138,8 @@ nav {
 		width: 50%;
 		color: white;
 		max-width: 750px;
-		background: $white_opaque;
+		/*background: #99D4F0;*/
+		background: #3599C7;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		margin: .5em auto 0 auto;
@@ -171,7 +175,7 @@ nav {
 	.restaurant_menu {
 		text-align: center;
 		font-weight: 300;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		text-transform: uppercase;
 		color: white;
 		margin: 0;
