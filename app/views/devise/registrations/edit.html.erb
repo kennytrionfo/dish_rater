@@ -8,7 +8,10 @@
       <div class="panel-body">
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
           <%= devise_error_messages! %>
-
+          <p style="text-align:center">
+            <%= link_to "Sign Out Here", destroy_user_session_path, method: :delete %>
+          </p>
+          <br>
           <div class="form-group">
             <%= f.label :email %><br />
             <%= f.email_field :email, autofocus: true, class: "form-control" %>
