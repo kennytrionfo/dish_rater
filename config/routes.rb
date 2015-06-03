@@ -11,7 +11,6 @@ Rails.application.routes.draw do
     resources :dishes
   end
 
-  # root 'welcome#index'
   root 'welcome#index'
 
 
