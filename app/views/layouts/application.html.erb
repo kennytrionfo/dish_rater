@@ -9,10 +9,10 @@
 <body>
 	<nav class="navbar navbar-default">
 	<div class="">
-	  <div class="navbar-brand">
-	    <%= link_to "Yummy yucky", "/yummy_yucky.html" %>
-	  </div>
 	  <% if user_signed_in? %>
+	    <div class="navbar-brand">
+	      <%= link_to "Yummy Yucky", "/yummy_yucky.html" %>
+	    </div>
 	    <ul class="nav navbar-nav navbar-right">
 	   	  <li>
 			 <%= link_to "Restaurants", restaurants_path %> 
@@ -28,6 +28,9 @@
 	      </li>
 	    </ul>
 	  <% else %>
+	    <div class="navbar-brand">
+	      <%= link_to "Yummy Yucky", "/yummy_yucky_2.html" %>
+	    </div>
 	    <ul class="nav navbar-nav navbar-right">
 	      <li>
 	        <%= link_to "Sign Up", new_user_registration_path %>
