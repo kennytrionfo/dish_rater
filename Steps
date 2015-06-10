@@ -52,8 +52,8 @@ Move the model over to the db:
 	rake db:migrate
 
 Check out the model in the db:
-	For postgresql: 
-	\c dish_rater_development (or whatever the name of your db found in database.yml file)
+	For postgresql, from console: 
+	psql dish_rater_development (or whatever the name of your db found in database.yml file)
 
 Create a Restaurants controller: 
 	In console: 
