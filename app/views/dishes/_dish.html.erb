@@ -36,7 +36,7 @@
     <div class="col-md-8" "col-md-offset-2">
       <div class="panel panel-default">
         <div class="panel-heading dish_image">
-          <%= image_tag dish.image.url %>
+          <%= image_tag dish.image.url(:medium) %>
         </div>
         <div class="panel-body">
           <h1>
@@ -45,6 +45,9 @@
           <p class="description">
             <%= dish.description %>
           </p>
+          <p class="yumyuck">
+            <%= dish.yumyuck %>
+          </p> 
           <p></p>
 
         </div>
@@ -55,13 +58,13 @@
 
             </div>
             <div class="col-md-6">
-              <% if false %>
-              <div class="btn-group pull-right"> <!--BEGIN ERB COMMENT OUT-->
+<% if false %> <!--BEGIN ERB COMMENT OUT-->
+<% end %> <!--END ERB COMMENT OUT-->
+              <div class="btn-group pull-right"> 
                 <% if user_signed_in? %>
-                  <%= link_to "Edit", edit_dish_path, class: "btn btn-default" %>
+                  <%= link_to "Edit", edit_restaurant_dish_path(@restaurant.id), class: "btn btn-default" %>
                   <%= link_to "Delete", dish_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
-                <% end %> 
-              </div> <!--END ERB COMMENT OUT-->
+              </div> 
               <% end %>
             </div>
           </div>

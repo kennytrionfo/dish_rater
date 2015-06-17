@@ -717,6 +717,7 @@ Update DEVISE ACCOUNT page stylying:
 ==== Right Here Right Now =====
 ===============================
 -Log time. 
+- Need to fix edit link on _dish.html.erb page
 -when ready to put the welcome page on, start by converting the html to erb for just the nav bar in the application file and see if I can get that to render correctly. 
 -Make it so that after you signup or log back in, you are redirected to the dishs index page, not the landing page.  
 -Change the devise notices for sucessful login, logout etc to be custom. 
