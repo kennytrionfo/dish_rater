@@ -1,7 +1,9 @@
 <div class="restaurant_title_bar">
   	<!-- <h3 id="my_restaurant">My Restaurants</h3> -->
-	<h1 id="my_restaurant"><%= @restaurant.name %></h1>
-	<%= link_to "Enter New Dish", new_restaurant_dish_path(@restaurant.id)%>
+	<h2 id="my_restaurant"><%= @restaurant.name %></h2>
+	<h4><%= link_to "Enter New Dish", new_restaurant_dish_path(@restaurant.id)%></h4>
+	<br>
+	<p id="restaurant_page_back_button"><%= link_to "Back", restaurants_path%></p>
 </div>
 
 <!-- <div>

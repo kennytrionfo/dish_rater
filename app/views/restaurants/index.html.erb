@@ -6,14 +6,14 @@
 	<% @restaurants.each do |restaurant| %>
 	  <div class="index_row clearfix">
 	    <h2 class="restaurant_title"><%= link_to restaurant.name, restaurant %></h2>
-	    <p class="restaurant_description"><%= restaurant.description %></p>
+	    <p id="restaurant_description"><%= restaurant.description %></p>
 		  <div class="restaurant_menu">
 		    <%= link_to "Dishes", restaurant %>  &nbsp;   | &nbsp;  
 		    <%= link_to "New Dish", restaurant %>  &nbsp;   | &nbsp; 
 		    <%= link_to "Edit Restaurant", restaurant %>  
 		  </div >
-	    <p class="menu_spacing"></p>
-	    <p class="restaurant_address"><%= restaurant.address %></p>
+	    <p id="menu_spacing"></p>
+	    <p id="restaurant_address"><%= restaurant.address %></p>
 	  </div>
 	<% end %>
 </div>

@@ -193,11 +193,11 @@ nav {
 		}
 	}
 
-	.menu_spacing {
+	#menu_spacing {
 		font-size: .5rem;
 	}
 
-	.restaurant_description {
+	#restaurant_description {
 		/*margin: 0 0 3em 0;*/
 		text-align: center;		
 		font-size: 1em;
@@ -205,11 +205,18 @@ nav {
 		font-style: italic;
 		font-weight: 100;
 	}
-	.restaurant_address {
+	#restaurant_address {
 		text-align: center;
 		font-size: 0.9em;
 		color: #4C948E;
 		font-weight: 100;
+	}
+	#restaurant_page_back_button {
+	  text-align: center;
+	  font-size: 0.9em;
+	  color: #4C948E;
+	  font-weight: 100;
+	  margin-top: -18px;
 	}
 
 	.index_row {
