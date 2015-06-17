@@ -4,7 +4,6 @@ class RestaurantsController < ApplicationController
     before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
 
 	def index
-		get_dishes
 		@restaurants = Restaurant.all.order("created_at DESC")
 	end
 
