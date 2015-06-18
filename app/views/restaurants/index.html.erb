@@ -10,7 +10,7 @@
 		  <div class="restaurant_menu">
 		    <%= link_to "Dishes", restaurant %>  &nbsp;   | &nbsp;  
 		    <%= link_to "New Dish", new_restaurant_dish_path(restaurant) %>  &nbsp;   | &nbsp; 
-		    <%= link_to "Edit Restaurant", restaurant %>  
+		    <%= link_to "Edit Restaurant", edit_restaurant_path(:id)%>  
 		  </div >
 	    <p id="menu_spacing"></p>
 	    <p id="restaurant_address"><%= restaurant.address %></p>

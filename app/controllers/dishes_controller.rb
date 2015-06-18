@@ -21,7 +21,6 @@ class DishesController < ApplicationController
 	end
 
 	def edit
-		@dish = @restaurant.dishes.create(dish_params)
 	end
 	
 	def update
