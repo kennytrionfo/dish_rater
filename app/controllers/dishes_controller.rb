@@ -33,9 +33,9 @@ class DishesController < ApplicationController
 
 	def destroy
 		if @dish.destroy
-			flash[:success] = "Restaurant was deleted"
+			flash[:success] = "Dish was deleted"
 		else
-			flash[:error] = "Restaurant could not be deleted dude."	
+			flash[:error] = "Dish could not be deleted dude."	
 		end
 		redirect_to @restaurant	
 	end

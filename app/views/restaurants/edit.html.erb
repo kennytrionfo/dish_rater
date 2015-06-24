@@ -1,6 +1,16 @@
 <div class="col-md-6 col-md-offset-3">
-	<h1>Edit Restaurant</h1>
-	<%= render 'form' %>
-	<%= link_to "Cancel", restaurant_path %>
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h1>Edit <%= @restaurant.name.upcase %></h1>
+			</div>
+				<%= render 'form' %>
+				<%= link_to "Delete #{@restaurant.name.upcase}" ,  restaurant_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
+				<br>
+				<br>
+				<%= link_to "Cancel", restaurant_path %>
+				<p></p>
+		</div>
+	</div>
 </div>
 
