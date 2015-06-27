@@ -5,6 +5,7 @@ class DishesController < ApplicationController
 
 	def index
 		@dishes = @restaurant.dishes.all(dish_params)
+		# @pins = Pin.all.order("created_at DESC")
 	end
 
 	def create
