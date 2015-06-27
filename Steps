@@ -788,7 +788,7 @@ Add jquery MASONRY gem to have dishes auto stack:
 	      itemSelector: '.box'
 	      isFitWidth: true
 	
-	Enable transitions in dishs/index.html.erb: 
+	Enable transitions in dishes/index.html.erb: 
 	Should end up like this: 
 	<div class="transitions-enabled" id="dishs">
 		<% @dishs.each do |dish| %>
@@ -805,7 +805,6 @@ Add jquery MASONRY gem to have dishes auto stack:
 
 	To application.css.scss file above require tree add:  
 	*= require 'masonry/transitions'
-
 	rails s
 	refresh
 	commit

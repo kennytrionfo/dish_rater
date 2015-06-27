@@ -1,0 +1,12 @@
+	<div class="transitions-enabled" id="dishs">
+		<% @dishs.each do |dish| %>
+		  <div class="box panel panel-default">
+		    <%= link_to (image_tag dish.image.url(:medium)), dish %>
+		    <div class="panel-body">
+		      <h2>
+		        <%= link_to dish.title, dish %>
+		      </h2>
+		    </div>
+		  </div>
+		<% end %>
+	</div>
