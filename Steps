@@ -779,9 +779,9 @@ Add jquery MASONRY gem to have dishes auto stack:
 	gem 'masonry-rails', '~> 0.2.1'
 	and bundle
 	
-	From documentation: add this line from the JavaScript section in application.js file under the two jquerys: 
+	From documentation: add this line from the JavaScript section to application.js file under the two jquerys: 
 	//= require masonry/jquery.masonry
-	put this in dishs.js.coffee, EXACTLY like this (coffescript is space/tab sensative:
+	put this in dishes.js.coffee, EXACTLY like this (coffescript is space/tab sensative:
 	$ ->
 	  $('#dishs').imagesLoaded ->
 	    $('#dishs').masonry

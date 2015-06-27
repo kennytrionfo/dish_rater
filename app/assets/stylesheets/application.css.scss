@@ -65,6 +65,10 @@ body {
 	}
 
 
+
+
+
+
 body {
 	/*background: #99D4F0;*/
 	background: #33A9E0;
@@ -240,6 +244,47 @@ box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
 padding: 1em 0;
 }
 
+
+///////////////////////////// Dishes stuff
+.yumyuck {margin-top:15px;}
+.panel-body {padding: 35px 35px 15px 35px;}
+#dish-name-panel {
+	margin-top: -10px;
+}
+
+#dish_show {
+	.panel-heading {
+		padding: 15px 30px;
+	}
+	.dish_image {
+		img {
+			max-width: 100%;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.panel-body {
+		padding: 35px 35px 15px 35px;
+		h1 {
+			margin: 0 0 10px 0;
+		}
+		.description {
+			color: #868686;
+			line-height: 1.75;
+			margin: 0;
+		}
+	}
+	.panel-footer {
+		padding: 20px 35px;
+		p {
+			margin: 0;
+		}
+		.user {
+			padding-top: 8px;
+		}
+	}
+}
 #dishes {
   margin: 0 auto;
   width: 100%;
@@ -442,3 +487,4 @@ input[type="submit"] {
 textarea {
 	min-height: 250px;
 }
+

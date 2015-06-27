@@ -7,6 +7,7 @@ gem 'devise', '~> 3.3.0'
 gem 'paperclip', '~> 4.2.0'
 gem 'byebug', '~> 4.0.5'
 gem 'pry', '~> 0.10.1'
+gem 'masonry-rails', '~> 0.2.1'
 #-----end my stuff-------
 
 
