@@ -8,6 +8,7 @@ gem 'paperclip', '~> 4.2.0'
 gem 'byebug', '~> 4.0.5'
 gem 'pry', '~> 0.10.1'
 gem 'masonry-rails', '~> 0.2.1'
+gem 'rails_12factor', group: :production  # To run better on heroku
 #-----end my stuff-------
 
 
