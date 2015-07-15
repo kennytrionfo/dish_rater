@@ -2,6 +2,12 @@
 This one should be the first full version, we'll see. Famous last words: "This should work!". 
 This was started on laptop at home. 
 
+============== FEATURE LIST ===============
+Drop down "yummy" or "yucky" option - A boolean of either. 
+Social aspect - Where others can see each other's pics. 
+Sales option - to sell it to restaurants so they can see what people like and don't. (Start by sending emails to restaurants on what people are liking and not.)
+===========================================
+
 Create a new rails app called dish_rater that uses postgres db and skips installing test::unit. 
 	In console: 
 	rails new dish_rater -d postgresql --skip-test-unit
