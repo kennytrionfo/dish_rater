@@ -10,6 +10,7 @@ gem 'byebug', '~> 4.0.5'
 gem 'pry', '~> 0.10.1'
 gem 'masonry-rails', '~> 0.2.1'
 gem 'rails_12factor', group: :production  # To run better on heroku
+gem 'puma' # A faster production server and alternative to using webrick on heroku. 
 #-----end my stuff-------
 
 
@@ -34,7 +35,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'sdoc', '~> 0.4.0',   group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
