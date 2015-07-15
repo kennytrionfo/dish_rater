@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.2' # required by heroku
 
 #————stuff put in here by me————Kenny Trionfo Apr 23,2015————
 gem 'bootstrap-sass', '~> 3.2.0.2'
