@@ -16,7 +16,7 @@
 /tmp
 
 temp_welcome_page
-views/welcome/yummy_yucky_files
-views/welcome/yummy_yucky.html
-public/yummy_yucky_files
-public/yummy_yucky.html
+/views/welcome/yummy_yucky_files
+/views/welcome/yummy_yucky.html
+/public/yummy_yucky_files
+/public/yummy_yucky.html

@@ -1,13 +1,34 @@
+========Description======
 --------- Yummy yucky rough draft, doing from start to practice----------Kenny Trionfo--- apl 23, 2015--------
 This one should be the first full version, we'll see. Famous last words: "This should work!". 
 This was started on laptop at home. 
+========Models==========
+User: has many restaurants
+Restaurant: has many dishes, belongs to user
+Dish: belongs to restaurant
+========Routes?========
 
-============== FEATURE LIST ===============
-Drop down "yummy" or "yucky" option - A boolean of either. 
-Social aspect - Where others can see each other's pics. 
-Sales option - to sell it to restaurants so they can see what people like and don't. (Start by sending emails to restaurants on what people are liking and not.)
-===========================================
+========V.1 Features (MVP)=========
+-Create a new restaurant with descrip, address, etc -1
+-Create new dishes with descrip, address, pic, etc.-3
+-jquery masonry gem for cards -1
+-Bootstrap(3hours)
+-Landing page -6
+========V.2 Features=========
+-Drop down "yummy" or "yucky" option - A boolean of either. 
 
+========V.3 Features=========
+-Social aspect - Where others can see each other's pics. 
+-Sales option - to sell it to restaurants so they can see what people like and don't. (Start by sending emails to restaurants on what people are liking and not.)
+-Native Mobile App
+========Tools=========
+DB: Postgresql, mysql, 
+CSS: Bootstrap, Foundation
+Gems: 
+
+
+
+============== STEPS ===============
 Create a new rails app called dish_rater that uses postgres db and skips installing test::unit. 
 	In console: 
 	rails new dish_rater -d postgresql --skip-test-unit
