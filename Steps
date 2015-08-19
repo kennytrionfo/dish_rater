@@ -6,6 +6,9 @@ This was started on laptop at home.
 User: has many restaurants
 Restaurant: has many dishes, belongs to user
 Dish: belongs to restaurant
+========Attributes======
+? 
+
 ========Routes?========
 
 ========V.1 Features (MVP)=========
